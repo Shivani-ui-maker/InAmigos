@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InAmigos Foundation - Uniting Minds For A Change</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">InAmigos <span class="logo-sub">Foundation</span></div>
+            <ul class="nav-links">
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#projects">Our Projects</a></li>
+                <li><a href="#impact">Impact</a></li>
+                <li><a href="#join">Join Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <span class="hero-tagline">Official Internship Task</span>
+            <h1>Uniting Minds For A Change</h1>
+            <p>Fostering community development and social empowerment through impactful, sustainable initiatives.</p>
+            <a href="#join" class="btn btn-primary">Become an Amigo</a>
+        </div>
+    </section>
+
+    <section class="credentials-bar">
+        <div class="credential-item"><i class="fa-solid fa-building-shield"></i> Section 8 Registered</div>
+        <div class="credential-item"><i class="fa-solid fa-certificate"></i> 80G & 12A Certified</div>
+        <div class="credential-item"><i class="fa-solid fa-stamp"></i> CSR-1 Registered</div>
+        <div class="credential-item"><i class="fa-solid fa-award"></i> NGO Darpan - NITI Aayog</div>
+    </section>
+
+    <section id="about" class="section about-section">
+        <h2>About InAmigos Foundation</h2>
+        <div class="section-divider"></div>
+        <div class="about-container">
+            <p>At InAmigos Foundation, we strive to bridge gaps in education, healthcare, and economic opportunities for underprivileged communities. Our mission is built on the principles of inclusivity, empathy, and collaboration, addressing the diverse needs of the communities we serve.</p>
+            <p>We believe in the power of grassroots involvement and collective action. By working hand-in-hand with local leaders, volunteers, and partner organizations, we design culturally sensitive, community-driven solutions that inspire lasting impact.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="section projects-section">
+        <h2>Our 6 Impactful Projects</h2>
+        <p class="section-subtitle">A holistic approach aiming to provide immediate relief and long-term growth.</p>
+        <div class="section-divider"></div>
+        
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                <h3>Seva</h3>
+                <p>Helping those in need by distributing food, clothes, and essential daily resources to vulnerable sections of society.</p>
+            </div>
+            <div class="project-card">
+                <div class="project-icon"><i class="fa-solid fa-book-open"></i></div>
+                <h3>Bachpanshala</h3>
+                <p>Providing quality education, foundational care, and mentorship to underprivileged children ensuring equal opportunities.</p>
+            </div>
+            <div class="project-card">
+                <div class="project-icon"><i class="fa-solid fa-paw"></i></div>
+                <h3>Jeev</h3>
+                <p>Dedicated to supporting, feeding, and rescuing street animals to build a kinder, safer environment for them.</p>
+            </div>
+            <div class="project-card">
+                <div class="project-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <h3>Udaan</h3>
+                <p>Empowering women by providing skill development training, resources, and sustainable socio-economic opportunities.</p>
+            </div>
+            <div class="project-card">
+                <div class="project-icon"><i class="fa-solid fa-earth-americas"></i></div>
+                <h3>Prakriti</h3>
+                <p>Protecting Mother Earth through community clean-up drives, environmental awareness, and massive tree plantation campaigns.</p>
+            </div>
+            <div class="project-card">
+                <div class="project-icon"><i class="fa-solid fa-briefcase"></i></div>
+                <h3>Vikas</h3>
+                <p>Helping youth grow through professional internships, real-world experience, and specialized skill-building frameworks.</p>
+            </div>
+        </div>
+    </section>
+<!-- Impact & Achievements Section -->
+    <section id="impact" class="section impact-section">
+        <h2>Our Growing Milestones</h2>
+        <div class="section-divider light"></div>
+        <div class="impact-stats">
+            <div class="stat-item">
+                <!-- Keep the + outside so it doesn't break the counter math -->
+                <h3><span class="counter" data-target="6">0</span>+</h3>
+                <p>Core Directives</p>
+            </div>
+            <div class="stat-item">
+                <h3><span class="counter" data-target="250">0</span>+</h3>
+                <p>Permanent Amigos via Internships</p>
+            </div>
+            <div class="stat-item">
+                <h3><span class="counter" data-target="9001">0</span></h3>
+                <p>ISO 9001:2015 Certified Impact</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="join" class="cta-section">
+        <h2>Be the Change. Become an AMIGO.</h2>
+        <p>Whether you want to volunteer, complete your internship with purpose, or support our causes—your action matters.</p>
+        <div class="cta-buttons">
+            <a href="https://www.linkedin.com/company/inamigos-foundation/" target="_blank" class="btn btn-secondary">Join Us on LinkedIn</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 InAmigos Foundation. All Rights Reserved.</p>
+        <p class="hashtags">#InAmigos #ProjectBachpanshala #ProjectVikas #SpreadHappiness #SocialGood #NGOIndia</p>
+    </footer>
+<script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const counters = document.querySelectorAll('.counter');
+            
+            const startCounting = (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const counter = entry.target;
+                        const target = parseInt(counter.getAttribute('data-target'));
+                        
+                        // Lower duration value = faster counting animation
+                        const duration = 1500; 
+                        const startTime = performance.now();
+                        
+                        const updateCount = (currentTime) => {
+                            const elapsedTime = currentTime - startTime;
+                            const progress = Math.min(elapsedTime / duration, 1);
+                            
+                            // Smooth ease-out tracking math
+                            const currentValue = Math.floor(progress * target);
+                            counter.innerText = currentValue;
+                            
+                            if (progress < 1) {
+                                requestAnimationFrame(updateCount);
+                            } else {
+                                counter.innerText = target; // Ensure it ends on exact number
+                            }
+                        };
+                        
+                        requestAnimationFrame(updateCount);
+                        observer.unobserve(counter); // Stop observing once animated
+                    }
+                });
+            };
+
+            // Triggers the animation when the numbers enter 90% of the screen depth
+            const observer = new IntersectionObserver(startCounting, {
+                threshold: 0.1
+            });
+
+            counters.forEach(counter => observer.observe(counter));
+        });
+    </script>
+</body>
+</html>>>
